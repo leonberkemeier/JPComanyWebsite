@@ -69,3 +69,48 @@ function rotateElement(event, element){
     element.style.setProperty("--rotateX", -1 * ratioOSY + "deg");
 }
 // alert("hi")
+
+
+
+// const chevron = document.querySelector('chevron-down');
+
+// document.getElementById('the-button0').addEventListener('click', function() {
+//   var icon = this.querySelector('.chevron-down');
+//   icon.classList.toggle('rotate');
+// });
+
+// document.getElementById('the-button1').addEventListener('click', function() {
+//   var icon = this.querySelector('.chevron-down');
+//   icon.classList.toggle('rotate');
+// });
+// alert("hi")
+
+
+var coll = document.getElementsByClassName("collapsible");
+let list = document.querySelectorAll("collapsible")
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+
+        
+        this.classList.toggle("active");
+        
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+      
+    };
+// const faqs = document.querySelectorAll(".collapsible");
+
+// faqs.forEach(faq => {
+//   faq.addEventListener("click", () =>{
+//     faq.classList.toggle("active");
+//   })
+// })
+
